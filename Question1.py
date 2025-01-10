@@ -1,6 +1,6 @@
 def encrypting_text(text, n, m):
     """
-    Encrypt the entire text using the encryption rules.
+    Encrypt the entire text using the encryption rules, as per the requirments. 
     """
     encrypted_text = ""
     
