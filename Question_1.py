@@ -7,25 +7,25 @@ def encrypting_txt(text, n, m):
     for char in text:
         # Handle lowercase letters
         if char.islower():
-            pos = ord(char) - ord('a')
-            if pos < 13:  # First half (a-m)
+            position = ord(char) - ord('a')
+            if position < 13:  # First half (a-m)
                 # Add flag bit (0) and then apply transformation
-                new_pos = ((pos + (n * m)) % 13) # Keep within first half
-                encrypted_text += chr(new_pos + ord('a'))
+                new_position = ((position + (n * m)) % 13) # Keep within first half
+                encrypted_text += chr(new_position + ord('a'))
             else:  # Second half (n-z)
                 # Add flag bit (1) and then apply transformation
-                new_pos = ((pos - (n + m)) % 13 + 13) # Keep within second half
-                encrypted_text += chr(new_pos + ord('a'))
+                new_position = ((position - (n + m)) % 13 + 13) # Keep within second half
+                encrypted_text += chr(new_position + ord('a'))
             
         # Handle uppercase letters
         elif char.isupper():
-            pos = ord(char) - ord('A')
-            if pos < 13:  # First half (A-M)
-                new_pos = ((pos - n) % 13) # Keep within first half
-                encrypted_text += chr(new_pos + ord('A'))
+            position = ord(char) - ord('A')
+            if position < 13:  # First half (A-M)
+                new_position = ((position - n) % 13) # Keep within first half
+                encrypted_text += chr(new_position + ord('A'))
             else:  # Second half (N-Z)
-                new_pos = ((pos + (m * m)) % 13 + 13) # Keep within second half
-                encrypted_text += chr(new_pos + ord('A'))
+                new_position = ((position + (m * m)) % 13 + 13) # Keep within second half
+                encrypted_text += chr(new_position + ord('A'))
             
         # Keep special characters and numbers unchanged
         else:
@@ -42,23 +42,23 @@ def decrypting_txt(encrypted_text, n, m):
     for char in encrypted_text:
         # Handle lowercase letters
         if char.islower():
-            pos = ord(char) - ord('a')
-            if pos < 13:  # Was encrypted using first half rule
-                new_pos = ((pos - (n * m)) % 13)
-                decrypted_text += chr(new_pos + ord('a'))
+            position= ord(char) - ord('a')
+            if position < 13:  # Was encrypted using first half rule
+                new_position = ((position - (n * m)) % 13)
+                decrypted_text += chr(new_position + ord('a'))
             else:  # Was encrypted using second half rule
-                new_pos = ((pos - 13 + (n + m)) % 13 + 13)
-                decrypted_text += chr(new_pos + ord('a'))
+                new_position = ((position - 13 + (n + m)) % 13 + 13)
+                decrypted_text += chr(new_position + ord('a'))
             
         # Handle uppercase letters
         elif char.isupper():
-            pos = ord(char) - ord('A')
-            if pos < 13:  # Was encrypted using first half rule
-                new_pos = ((pos + n) % 13)
-                decrypted_text += chr(new_pos + ord('A'))
+            position = ord(char) - ord('A')
+            if position < 13:  # Was encrypted using first half rule
+                new_position = ((position + n) % 13)
+                decrypted_text += chr(new_position + ord('A'))
             else:  # Was encrypted using second half rule
-                new_pos = ((pos - 13 - (m * m)) % 13 + 13)
-                decrypted_text += chr(new_pos + ord('A'))
+                new_position = ((position - 13 - (m * m)) % 13 + 13)
+                decrypted_text += chr(new_position + ord('A'))
             
         # Keep special characters and numbers unchanged
         else:
@@ -74,10 +74,10 @@ def main():
         
         # Read from input file
         with open("raw_text.txt", 'r') as file:
-            text = file.read()
+            original_text = file.read()
         
         # Encrypt the text
-        encrypted_text = encrypting_txt(text, n, m)  # Changed function name
+        encrypted_text = encrypting_txt(original_text, n, m)  # Changed function name
         
         # Write encrypted text to file
         with open("encrypted_text.txt", 'w') as file:
@@ -88,8 +88,8 @@ def main():
         with open("decrypted_text.txt", 'w') as file:
             file.write(decrypted_text)
             
-        # Verify the decryption
-        if text == decrypted_text:
+        # Verify the decrypted text with the original text 
+        if original_text == decrypted_text:
             print("\nEncryption and decryption completed successfully!")
             print("Original text matches decrypted text.")
         else:
@@ -99,8 +99,7 @@ def main():
         print("Error: raw_text.txt not found!")
     except ValueError:
         print("Error: Please enter valid numbers for n and m!")
-    except Exception as e:
-        print(f"An error occurred: {str(e)}")
+
 
 if __name__ == "__main__":
     main()
