@@ -7,10 +7,10 @@ def encrypting_txt(text, n, m):
     for char in text:
         # Handle lowercase letters
         if char.islower():
-            position = ord(char) - ord('a')
+            position = ord(char) - ord('a') # Converts to their unicode 
             if position < 13:  # First half (a-m)
                 # Add flag bit (0) and then apply transformation
-                new_position = ((position + (n * m)) % 13) # Keep within first half
+                new_position = ((position + (n * m)) % 13) # Keep within first half of the alphabet
                 encrypted_text += chr(new_position + ord('a'))
             else:  # Second half (n-z)
                 # Add flag bit (1) and then apply transformation
