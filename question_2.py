@@ -14,15 +14,15 @@
 # question number 1: Calculate the average temperatures for each season across all years. Save the
 # result to file “average_temp.txt”.
 
-# Step 1: Define a function to calculate seasonal averages
+# 1:  function for calculate seasonal averages
 
 output_file = "average_temp.txt"
 
 
-# Step 2: Process multiple files
+# 2. Process multiple files
 def calculate_seasonal_averages(file_path, year, output_file):
     seasons = {
-        "Summer": [11, 0, 1],  # December, January, February (0-based indexing)
+        "Summer": [11, 0, 1],  # December, January, February 
         "Autumn": [2, 3, 4],  # March, April, May
         "Winter": [5, 6, 7],  # June, July, August
         "Spring": [8, 9, 10],  # September, October, November
@@ -48,32 +48,32 @@ def calculate_seasonal_averages(file_path, year, output_file):
         file.write(f"Year: {year}\n")
         for season, avg_temp in seasonal_averages.items():
             file.write(f"{season}: {avg_temp:.2f}\n")
-        file.write("\n")  # Separate entries for readability
+        file.write("\n")  
 input_files = {
     "1986": "temperature_data/stations_group_1986.csv",
-    "1987": "temperature_data/stations_group_1987.csv",  # Add more years and corresponding files
-    "1989": "temperature_data/stations_group_1989.csv",  # Add more years and corresponding files
-    "1990": "temperature_data/stations_group_1990.csv",  # Add more years and corresponding files
-    "1991": "temperature_data/stations_group_1991.csv",  # Add more years and corresponding files
-    "1992": "temperature_data/stations_group_1992.csv",  # Add more years and corresponding files
-    "1993": "temperature_data/stations_group_1993.csv",  # Add more years and corresponding files
-    "1994": "temperature_data/stations_group_1994.csv",  # Add more years and corresponding files
-    "1995": "temperature_data/stations_group_1995.csv",  # Add more years and corresponding files
-    "1996": "temperature_data/stations_group_1996.csv",  # Add more years and corresponding files
-    "1997": "temperature_data/stations_group_1997.csv",  # Add more years and corresponding files
-    "1998": "temperature_data/stations_group_1998.csv",  # Add more years and corresponding files
-    "1999": "temperature_data/stations_group_1999.csv",  # Add more years and corresponding files
-    "2000": "temperature_data/stations_group_2000.csv",  # Add more years and corresponding files
-    "2001": "temperature_data/stations_group_2001.csv",  # Add more years and corresponding files
-    "2002": "temperature_data/stations_group_2002.csv",  # Add more years and corresponding files
-    "2003": "temperature_data/stations_group_2003.csv",  # Add more years and corresponding files
-    "2004": "temperature_data/stations_group_2004.csv",  # Add more years and corresponding files
-    "2005": "temperature_data/stations_group_2005.csv"  # Add more years and corresponding files
+    "1987": "temperature_data/stations_group_1987.csv",  
+    "1989": "temperature_data/stations_group_1989.csv",  
+    "1990": "temperature_data/stations_group_1990.csv",  
+    "1991": "temperature_data/stations_group_1991.csv",  
+    "1992": "temperature_data/stations_group_1992.csv",  
+    "1993": "temperature_data/stations_group_1993.csv",  
+    "1994": "temperature_data/stations_group_1994.csv",  
+    "1995": "temperature_data/stations_group_1995.csv",  
+    "1996": "temperature_data/stations_group_1996.csv",  
+    "1997": "temperature_data/stations_group_1997.csv",  
+    "1998": "temperature_data/stations_group_1998.csv",  
+    "1999": "temperature_data/stations_group_1999.csv",  
+    "2000": "temperature_data/stations_group_2000.csv",  
+    "2001": "temperature_data/stations_group_2001.csv",  
+    "2002": "temperature_data/stations_group_2002.csv",  
+    "2003": "temperature_data/stations_group_2003.csv",  
+    "2004": "temperature_data/stations_group_2004.csv",  
+    "2005": "temperature_data/stations_group_2005.csv"  
 
 
 }
 
-# Step 3: Loop through files and calculate averages
+# 3. Loop through files and calculate averages
 for year, file_path in input_files.items():
     calculate_seasonal_averages(file_path, year, output_file)
 
