@@ -1,5 +1,3 @@
-Average Temperatures by Season (Across All Years)
-----------------------------------------------
 Year: 1986
 Summer: 31.99
 Autumn: 27.23
