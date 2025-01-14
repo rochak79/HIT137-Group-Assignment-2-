@@ -1,114 +1,143 @@
+Yearly Seasonal Averages Report
+==================================================
+
 Year: 1986
-Summer: 31.99
-Autumn: 27.23
-Winter: 21.00
-Spring: 27.31
+--------------------------------------------------
+Summer    : 31.99 
+Autumn    : 27.23 
+Winter    : 21.00 
+Spring    : 27.31 
 
 Year: 1987
-Summer: 32.02
-Autumn: 27.23
-Winter: 21.00
-Spring: 27.33
+--------------------------------------------------
+Summer    : 32.02 
+Autumn    : 27.23 
+Winter    : 21.00 
+Spring    : 27.33 
+
+Year: 1988
+--------------------------------------------------
+Summer    : 32.11 
+Autumn    : 27.34 
+Winter    : 21.06 
+Spring    : 27.43 
 
 Year: 1989
-Summer: 32.20
-Autumn: 27.49
-Winter: 21.12
-Spring: 27.52
+--------------------------------------------------
+Summer    : 32.20 
+Autumn    : 27.49 
+Winter    : 21.12 
+Spring    : 27.52 
 
 Year: 1990
-Summer: 31.99
-Autumn: 27.19
-Winter: 20.99
-Spring: 27.28
+--------------------------------------------------
+Summer    : 31.99 
+Autumn    : 27.19 
+Winter    : 20.99 
+Spring    : 27.28 
 
 Year: 1991
-Summer: 32.15
-Autumn: 27.38
-Winter: 21.08
-Spring: 27.43
+--------------------------------------------------
+Summer    : 32.15 
+Autumn    : 27.38 
+Winter    : 21.08 
+Spring    : 27.43 
 
 Year: 1992
-Summer: 32.21
-Autumn: 27.42
-Winter: 21.10
-Spring: 27.55
+--------------------------------------------------
+Summer    : 32.21 
+Autumn    : 27.42 
+Winter    : 21.10 
+Spring    : 27.55 
 
 Year: 1993
-Summer: 32.07
-Autumn: 27.25
-Winter: 21.03
-Spring: 27.41
+--------------------------------------------------
+Summer    : 32.07 
+Autumn    : 27.25 
+Winter    : 21.03 
+Spring    : 27.41 
 
 Year: 1994
-Summer: 32.16
-Autumn: 27.36
-Winter: 21.08
-Spring: 27.51
+--------------------------------------------------
+Summer    : 32.16 
+Autumn    : 27.36 
+Winter    : 21.08 
+Spring    : 27.51 
 
 Year: 1995
-Summer: 31.90
-Autumn: 27.09
-Winter: 20.88
-Spring: 27.20
+--------------------------------------------------
+Summer    : 31.90 
+Autumn    : 27.09 
+Winter    : 20.88 
+Spring    : 27.20 
 
 Year: 1996
-Summer: 32.19
-Autumn: 27.41
-Winter: 21.16
-Spring: 27.49
+--------------------------------------------------
+Summer    : 32.19 
+Autumn    : 27.41 
+Winter    : 21.16 
+Spring    : 27.49 
 
 Year: 1997
-Summer: 32.34
-Autumn: 27.55
-Winter: 21.24
-Spring: 27.64
+--------------------------------------------------
+Summer    : 32.34 
+Autumn    : 27.55 
+Winter    : 21.24 
+Spring    : 27.64 
 
 Year: 1998
-Summer: 31.84
-Autumn: 27.03
-Winter: 20.83
-Spring: 27.15
+--------------------------------------------------
+Summer    : 31.84 
+Autumn    : 27.03 
+Winter    : 20.83 
+Spring    : 27.15 
 
 Year: 1999
-Summer: 32.11
-Autumn: 27.32
-Winter: 21.08
-Spring: 27.40
+--------------------------------------------------
+Summer    : 32.11 
+Autumn    : 27.32 
+Winter    : 21.08 
+Spring    : 27.40 
 
 Year: 2000
-Summer: 32.15
-Autumn: 27.39
-Winter: 21.14
-Spring: 27.53
+--------------------------------------------------
+Summer    : 32.15 
+Autumn    : 27.39 
+Winter    : 21.14 
+Spring    : 27.53 
 
 Year: 2001
-Summer: 32.12
-Autumn: 27.35
-Winter: 21.13
-Spring: 27.50
+--------------------------------------------------
+Summer    : 32.12 
+Autumn    : 27.35 
+Winter    : 21.13 
+Spring    : 27.50 
 
 Year: 2002
-Summer: 32.27
-Autumn: 27.48
-Winter: 21.21
-Spring: 27.63
+--------------------------------------------------
+Summer    : 32.27 
+Autumn    : 27.48 
+Winter    : 21.21 
+Spring    : 27.63 
 
 Year: 2003
-Summer: 32.04
-Autumn: 27.25
-Winter: 20.97
-Spring: 27.35
+--------------------------------------------------
+Summer    : 32.04 
+Autumn    : 27.25 
+Winter    : 20.97 
+Spring    : 27.35 
 
 Year: 2004
-Summer: 32.07
-Autumn: 27.29
-Winter: 21.10
-Spring: 27.45
+--------------------------------------------------
+Summer    : 32.07 
+Autumn    : 27.29 
+Winter    : 21.10 
+Spring    : 27.45 
 
 Year: 2005
-Summer: 32.14
-Autumn: 27.36
-Winter: 21.15
-Spring: 27.53
+--------------------------------------------------
+Summer    : 32.14 
+Autumn    : 27.36 
+Winter    : 21.15 
+Spring    : 27.53 
 

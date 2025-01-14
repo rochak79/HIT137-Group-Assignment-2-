@@ -6,7 +6,7 @@ def draw_tree_pattern(branch_length, left_angle, right_angle, depth, reduction_f
         return
 
     # Set the color based on the depth
-    if depth >
+    if depth :
         turtle.color("green")
     else:
         turtle.color("brown")
