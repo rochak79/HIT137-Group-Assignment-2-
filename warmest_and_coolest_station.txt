@@ -1,0 +1,5 @@
+Warmest and Coolest Stations:
+Warmest Temperature: -10.58
+Warmest Station: HORN-ISLAND
+Coolest Temperature: -43.49
+Coolest Station: CAPE-BRUNY-LIGHTHOUSE
