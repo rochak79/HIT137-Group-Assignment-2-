@@ -7,9 +7,25 @@ that calls itself until the program achieve the desired result.
 
 What we are doing right here is we have defined a function and few parameters has been defined to let user 
 type it according to how they would like to call it.
+
+After setting everything up we are calling the draw_tree_pattern() function inside itself
+reducing depth by 1 and branch_lenth by 70% each time.
+
+left_angle = this rotate to the left by the angle user has input.
+right_angle = this rotate to the right by the angle user has input.
+Depth = This tells how many “layers” of branches the tree should have. The deeper the tree, the more branches it will have.
+reduction_factor = This will reduce the new branch by 70% compared to previous branch.
+branch_length = This will be the length of the current branch input by user and it will be less each time calling it recursively.
+
+Each time darwing left and right we return to the orginal postion  to draw the other side of the branches.
+
+when reaching the condition depth = 0 then it will stop drawing becuase we have reached the smallest barnch.
+and it stop calling itself and then the drawing ends.
+
 """
-def draw_tree_pattern(left_angle, right_angle, branch_length, depth, reduction_factor):
-    if depth == 0:  # Base case: stop when depth reaches 0
+def draw_tree_pattern(branch_length, left_angle, right_angle, depth, reduction_factor):
+
+    if depth == 0:  # Base case: stop when depth reaches 0 
         return
 
     # Set the color based on the depth
@@ -19,7 +35,7 @@ def draw_tree_pattern(left_angle, right_angle, branch_length, depth, reduction_f
         turtle.color("green")
 
     # Draw the current branch
-    turtle.pensize(depth)  # set the width of the pen for drawing
+    turtle.pensize(depth)  # Adjust branch thickness based on depth
     turtle.forward(branch_length)
     
     # Draw the left branch
@@ -33,7 +49,7 @@ def draw_tree_pattern(left_angle, right_angle, branch_length, depth, reduction_f
     turtle.left(right_angle)  # Return to original position
 
     # Return to the starting point of the current branch
-    if branch_length==100:
+    if branch_length == 100:
         turtle.penup()
         turtle.hideturtle()
     turtle.backward(branch_length)
