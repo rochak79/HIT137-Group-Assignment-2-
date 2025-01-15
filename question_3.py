@@ -28,27 +28,27 @@ def draw_tree_pattern(branch_length, left_angle, right_angle, depth, reduction_f
     if depth == 0:  # Base case: stop when depth reaches 0 
         return
 
-    # Set the color based on the depth
+    # set the color based on the depth
     if depth == 5:
         turtle.color("brown")
     else:
         turtle.color("green")
 
-    # Draw the current branch
-    turtle.pensize(depth)  # Adjust branch thickness based on depth
+    # draw the current branch
+    turtle.pensize(depth)  # adjust branch thickness based on depth
     turtle.forward(branch_length)
     
-    # Draw the left branch
+    # draw the left branch
     turtle.left(left_angle)
     draw_tree_pattern(branch_length * reduction_factor, left_angle, right_angle, depth - 1, reduction_factor)
     turtle.right(left_angle)  # Return to original position
 
-    # Draw the right branch
+    # draw the right branch
     turtle.right(right_angle)
     draw_tree_pattern(branch_length * reduction_factor, left_angle, right_angle, depth - 1, reduction_factor)
     turtle.left(right_angle)  # Return to original position
 
-    # Return to the starting point of the current branch
+    # return to the starting point of the current branch
     if branch_length == 100:
         turtle.penup()
         turtle.hideturtle()
