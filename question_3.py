@@ -2,8 +2,9 @@ import turtle
 
 """
 Recursive function to draw a tree like pattern
-Basically recursive function is a kind of loop that can be called multiple times and 
-and only stop if certain conditions are met
+Basically recursive function is a method used to solve certain problems by creating a function 
+that calls itself until the program achieve the desired result.
+
 What we are doing right here is we have defined a function and few parameters has been defined to let user 
 type it according to how they would like to call it.
 """
