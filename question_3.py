@@ -101,7 +101,7 @@ def main():
             #Asks if the user wants to run the prgram again with different parameters
             program = input("Would you like to draw another tree? (yes/no): ").lower()
             if program != "yes" and program  != "y":
-                print("Thank you for running the program again")
+                print("Thank you for running the program")
                 break
             
             

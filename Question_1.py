@@ -95,6 +95,11 @@ def main():
                 print("Original text matches decrypted text.")
             else:
                 print("\nWarning: Decrypted text doesn't match original text!")
+                
+            program = input("Would you like to encrypt the text again? (yes/no): ").lower()
+            if program != "yes" and program  != "y":
+                print("Thank you for using this encrytpion program!")
+                break
         
         except FileNotFoundError:
             print("Error: raw_text.txt not found!")
