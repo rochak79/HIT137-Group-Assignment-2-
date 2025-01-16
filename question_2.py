@@ -28,7 +28,9 @@ result to file “average_temp.txt”.
 def calculate_seasonal_averages_per_year(input_folder, output_file):
     # Defining seasons
     seasons = {
-        "Summer": [11, 0, 1],  # December, January, February
+        "Summer": [11, 0, 1],  # December, January, February 
+        # [i.e, total average from the indivual averages of december, january, february combined][
+        # excel==AVERAGE(P2:P113,E2:E113,F2:F113)]
         "Autumn": [2, 3, 4],   # March, April, May
         "Winter": [5, 6, 7],   # June, July, August
         "Spring": [8, 9, 10],  # September, October, November
