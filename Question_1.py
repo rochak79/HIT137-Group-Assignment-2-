@@ -2,18 +2,18 @@ def encrypting_txt(text, n, m):
     """
     Encrypts the text as per given requirements
     """
-    encrypted_text = ""
+    encrypted_text = "" #stores the encrypted text in an empty string
     
     for char in text:
         # Handle lowercase letters
         if char.islower():
-            position = ord(char) - ord('a') # Converts to their unicode 
+            position = ord(char) - ord('a') # Converts the letters into their unicode values 
             if position < 13:  # First half (a-m)
-                # Add flag bit (0) and then apply transformation
-                new_position = ((position + (n * m)) % 13) # Keep within first half of the alphabet
-                encrypted_text += chr(new_position + ord('a'))
+                #applying the sets of rules and keeps it within the first half 
+                new_position = ((position + (n * m)) % 13)
+                encrypted_text += chr(new_position + ord('a')) # adds it to the empty variable string 
             else:  # Second half (n-z)
-                # Add flag bit (1) and then apply transformation
+                # apply the seconds sets of rule to the second half of the alpahabet 
                 new_position = ((position - (n + m)) % 13 + 13) # Keep within second half
                 encrypted_text += chr(new_position + ord('a'))
             
@@ -27,7 +27,7 @@ def encrypting_txt(text, n, m):
                 new_position = ((position + (m * m)) % 13 + 13) # Keep within second half
                 encrypted_text += chr(new_position + ord('A'))
             
-        # Keep special characters and numbers unchanged
+        # Special characters and numbers stays the same 
         else:
             encrypted_text += char
             
@@ -35,7 +35,7 @@ def encrypting_txt(text, n, m):
 
 def decrypting_txt(encrypted_text, n, m):
     """
-    Decryptes the encrypted text 
+    Decryptes the encrypted text using the same sets of rules, but reversed. 
     """
     decrypted_text = ""
     
@@ -43,10 +43,10 @@ def decrypting_txt(encrypted_text, n, m):
         # Handle lowercase letters
         if char.islower():
             position= ord(char) - ord('a')
-            if position < 13:  # Was encrypted using first half rule
-                new_position = ((position - (n * m)) % 13)
+            if position < 13:  
+                new_position = ((position - (n * m)) % 13) # subracting or shifting backwards, rather than forward 
                 decrypted_text += chr(new_position + ord('a'))
-            else:  # Was encrypted using second half rule
+            else: # handles second half of the alphabet
                 new_position = ((position - 13 + (n + m)) % 13 + 13)
                 decrypted_text += chr(new_position + ord('a'))
             
@@ -95,6 +95,11 @@ def main():
                 print("Original text matches decrypted text.")
             else:
                 print("\nWarning: Decrypted text doesn't match original text!")
+                
+            program = input("Would you like to encrypt the text again? (yes/no): ").lower()
+            if program != "yes" and program  != "y":
+                print("Thank you for using this encrytpion program!")
+                break
         
         except FileNotFoundError:
             print("Error: raw_text.txt not found!")
