@@ -1,13 +1,32 @@
 """
+Question 2
+Create a program that analyses temperature data collected from multiple weather
+stations in Australia. The data is stored in multiple CSV files under a temperatures
+folder, with each file representing data from one year.
+
+You need to:
+
+1.Calculate the average temperatures for each season across all years. Save the
+result to file “average_temp.txt”.
+2. Find the station/stations have the largest temperature range. Save the result to
+file “largest_temp_range_station.txt”.
+3. Find the warmest and coolest station/stations. Save the result to file
+“warmest_and_coolest_station.txt”.
+"""
+
+
+
+import pandas as pd
+import os
+
+"""
 1. Calculate the average temperatures for each season across all years. Save the
 result to file “average_temp.txt”.
 
 """
-import pandas as pd
-import os
 
 def calculate_seasonal_averages_per_year(input_folder, output_file):
-    # Define seasons
+    # Defining seasons
     seasons = {
         "Summer": [11, 0, 1],  # December, January, February
         "Autumn": [2, 3, 4],   # March, April, May
@@ -47,7 +66,7 @@ def calculate_seasonal_averages_per_year(input_folder, output_file):
                 # Adding a blank line after each year
                 f.write("\n")
 
-# Input and output file paths
+# Input and output paths
 input_folder = "temperature_data"
 output_file = "average_temp.txt"
 
@@ -165,7 +184,7 @@ find_largest_temp_range(input_folder, output_file)
 
 # Function to find warmest and coolest stations (with overall calculations)
 def find_warmest_and_coolest_stations(input_folder, output_file):
-    # Initialize variables to track overall warmest and coolest temperatures and stations
+    # Initializing variables to track overall warmest and coolest temperatures and stations
     overall_warmest_temp = float('-inf')
     overall_coolest_temp = float('inf')
     overall_warmest_stations = []
@@ -173,19 +192,19 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
     warmest_year = None
     coolest_year = None
 
-    # Open the output file to write results
+    # Opening the output file to write results
     with open(output_file, "w") as f:
         f.write("Warmest and Coolest Stations\n")
         f.write("=" * 70 + "\n\n")
 
-        # Process each file in the input folder
-        for file_name in sorted(os.listdir(input_folder)):  # Process files in sorted order
+        # Processing each file in the input folder
+        for file_name in sorted(os.listdir(input_folder)):  # Processing files in sorted order
             if file_name.endswith(".csv"):
                 year = file_name.split("_")[-1].split(".")[0]
                 file_path = os.path.join(input_folder, file_name)
                 data = pd.read_csv(file_path)
 
-                # Calculate average temperature for each station
+                # Calculating average temperatures for each stations
                 station_max_temps = data.iloc[:, 4:].max(axis=1)
                 station_min_temps = data.iloc[:, 4:].min(axis=1)
                 max_temp = station_max_temps.max()
@@ -193,7 +212,7 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
                 warmest_stations = data.loc[station_max_temps == max_temp, "STATION_NAME"].tolist()
                 coolest_stations = data.loc[station_min_temps == min_temp, "STATION_NAME"].tolist()
 
-                # Write yearly results to the file
+                # Writing yearly results to the file
                 f.write(f"Year: {year}\n")
                 f.write(f"Warmest Temperature: {max_temp:.2f} \n")
                 f.write("Warmest Station(s):\n")
@@ -205,7 +224,7 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
                     f.write(f"  - {station}\n")
                 f.write("\n")
 
-                # Update overall warmest and coolest stations and temperatures
+                # Updating overall warmest and coolest stations and temperatures
                 if max_temp > overall_warmest_temp:
                     overall_warmest_temp = max_temp
                     overall_warmest_stations = warmest_stations
@@ -216,7 +235,7 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
                     overall_coolest_stations = coolest_stations
                     coolest_year = year
 
-        # Write overall results to the file
+        # Writing overall results to the file
         f.write("Overall Warmest and Coolest Stations\n")
         f.write("=" * 70 + "\n\n")
         f.write(f"Warmest Temperature: {overall_warmest_temp:.2f} \n")
@@ -232,9 +251,9 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
 
     print(f"All results saved to {output_file}.")
 
-# Define input and output paths
+# Defining input and output paths
 input_folder = "temperature_data"
 output_file_warmest_coolest = "warmest_and_coolest_station.txt"
 
-# Run the function
+# Running the function
 find_warmest_and_coolest_stations(input_folder, output_file_warmest_coolest)
