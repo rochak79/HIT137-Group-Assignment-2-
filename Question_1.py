@@ -7,14 +7,14 @@ def encrypting_txt(text, n, m):
     for char in text:
         # Handle lowercase letters
         if char.islower():
-            position = ord(char) - ord('a') # Converts the letters into their unicode values 
+            position = ord(char) - ord('a') # Converting the letters into their unicode values 
             if position < 13:  # First half (a-m)
                 #applying the sets of rules and keeps it within the first half 
                 new_position = ((position + (n * m)) % 13)
-                encrypted_text += chr(new_position + ord('a')) # adds it to the empty variable string 
+                encrypted_text += chr(new_position + ord('a')) # adding it to the empty variable string 
             else:  # Second half (n-z)
                 # apply the seconds sets of rule to the second half of the alpahabet 
-                new_position = ((position - (n + m)) % 13 + 13) # Keep within second half
+                new_position = ((position - (n + m)) % 13 + 13) # Keeping within second half
                 encrypted_text += chr(new_position + ord('a'))
             
         # Handle uppercase letters
@@ -77,14 +77,14 @@ def main():
             with open("raw_text.txt", 'r') as file:
                 original_text = file.read()
             
-            # Encrypt the text
+            # Encrypting the text
             encrypted_text = encrypting_txt(original_text, n, m)  # Changed function name
             
             # Write encrypted text to file
             with open("encrypted_text.txt", 'w') as file:
                 file.write(encrypted_text)
                 
-            # Decrypt the text and save it
+            # Decrypting the text and save it
             decrypted_text = decrypting_txt(encrypted_text, n, m)
             with open("decrypted_text.txt", 'w') as file:
                 file.write(decrypted_text)
