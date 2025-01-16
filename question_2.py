@@ -42,7 +42,7 @@ def calculate_seasonal_averages_per_year(input_folder, output_file):
         f.write("=" * 50 + "\n\n")
         
         # Iterating through all CSV files
-        for file_name in sorted(os.listdir(input_folder)):  # Sort it like year-wise order
+        for file_name in sorted(os.listdir(input_folder)):  # Sorting it in year-wise order
             if file_name.endswith(".csv"):
                 # Extracting the year from the file name 
                 year = file_name.split("_")[-1].split(".")[0]
@@ -60,7 +60,7 @@ def calculate_seasonal_averages_per_year(input_folder, output_file):
                     # Select the corresponding month columns
                     month_indices = [4 + m for m in months]
                     season_data = data.iloc[:, month_indices]
-                    season_avg = season_data.mean().mean()  # Average of temperature for the season
+                    season_avg = season_data.mean().mean()  # calculating averages of temperature for each season
 
                     # Writing the season result
                     f.write(f"{season:<10}: {season_avg:.2f} \n")
@@ -169,7 +169,7 @@ def find_largest_temp_range(input_folder, output_file):
     
     print(f"Results saved to {output_file}.")
 
-# Input folder containing the temperature CSV file
+# Assigning temperature data in input_folder variable 
 input_folder = "temperature_data"  # Replacing with the correct folder path
 
 # Outputs for all results
