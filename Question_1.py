@@ -1,6 +1,6 @@
 def encrypting_txt(text, n, m):
     """
-    Encrypts the text as per given requirements
+    Encrypting the text as per given requirements
     """
     encrypted_text = "" #stores the encrypted text in an empty string
     
