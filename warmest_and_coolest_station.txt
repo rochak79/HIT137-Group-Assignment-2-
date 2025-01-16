@@ -2,162 +2,174 @@ Warmest and Coolest Stations
 ======================================================================
 
 Year: 1986
-Warmest Temperature: 37.48 °C
+Warmest Temperature: 43.31 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 12.38 °C
+  - BOULIA-AIRPORT
+Coolest Temperature: 3.81 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1987
-Warmest Temperature: 36.85 °C
+Warmest Temperature: 42.75 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 14.78 °C
+  - MARBLE-BAR
+Coolest Temperature: 7.33 
 Coolest Station(s):
-  - BUTLERS-GORGE
+  - CABRAMURRA-SMHEA-AWS
 
 Year: 1988
-Warmest Temperature: 38.29 °C
+Warmest Temperature: 43.94 
 Warmest Station(s):
   - HALLS-CREEK-AIRPORT
-Coolest Temperature: 13.83 °C
+Coolest Temperature: 7.18 
 Coolest Station(s):
-  - BUTLERS-GORGE
+  - CABRAMURRA-SMHEA-AWS
 
 Year: 1989
-Warmest Temperature: 37.09 °C
+Warmest Temperature: 43.47 
 Warmest Station(s):
   - WITTENOOM
-Coolest Temperature: 13.33 °C
+Coolest Temperature: 4.63 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1990
-Warmest Temperature: 37.41 °C
+Warmest Temperature: 42.22 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 12.81 °C
+  - WITTENOOM
+Coolest Temperature: 4.92 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1991
-Warmest Temperature: 37.44 °C
+Warmest Temperature: 42.31 
 Warmest Station(s):
-  - KALUMBURU
-Coolest Temperature: 12.88 °C
+  - MARBLE-BAR
+Coolest Temperature: 4.79 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1992
-Warmest Temperature: 41.48 °C
+Warmest Temperature: 47.13 
 Warmest Station(s):
   - MARBLE-BAR
-Coolest Temperature: 13.89 °C
+Coolest Temperature: 5.27 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1993
-Warmest Temperature: 38.88 °C
+Warmest Temperature: 43.81 
 Warmest Station(s):
   - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 12.64 °C
+Coolest Temperature: 3.91 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1994
-Warmest Temperature: 37.50 °C
+Warmest Temperature: 43.40 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 14.75 °C
+  - MARBLE-BAR
+Coolest Temperature: 5.91 
 Coolest Station(s):
-  - BUTLERS-GORGE
+  - CABRAMURRA-SMHEA-AWS
 
 Year: 1995
-Warmest Temperature: 36.41 °C
+Warmest Temperature: 43.39 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 13.86 °C
+  - BIRDSVILLE-AIRPORT
+Coolest Temperature: 6.29 
 Coolest Station(s):
-  - BUTLERS-GORGE
+  - CABRAMURRA-SMHEA-AWS
 
 Year: 1996
-Warmest Temperature: 39.05 °C
+Warmest Temperature: 44.84 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 12.55 °C
+  - BIRDSVILLE-AIRPORT
+Coolest Temperature: 4.04 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1997
-Warmest Temperature: 37.29 °C
+Warmest Temperature: 43.96 
 Warmest Station(s):
-  - RICHMOND-POST-OFFICE
-Coolest Temperature: 12.89 °C
+  - WITTENOOM
+Coolest Temperature: 4.76 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1998
-Warmest Temperature: 36.77 °C
+Warmest Temperature: 43.67 
 Warmest Station(s):
-  - MARBLE-BAR
-Coolest Temperature: 13.33 °C
+  - BIRDSVILLE-AIRPORT
+Coolest Temperature: 4.43 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1999
-Warmest Temperature: 38.53 °C
+Warmest Temperature: 42.52 
 Warmest Station(s):
-  - NORMANTON-AIRPORT
-Coolest Temperature: 12.59 °C
+  - WITTENOOM
+Coolest Temperature: 4.16 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2000
-Warmest Temperature: 38.31 °C
+Warmest Temperature: 44.07 
 Warmest Station(s):
   - MARBLE-BAR
-Coolest Temperature: 12.40 °C
+Coolest Temperature: 3.87 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2001
-Warmest Temperature: 40.53 °C
+Warmest Temperature: 46.77 
 Warmest Station(s):
   - MARBLE-BAR
-Coolest Temperature: 13.25 °C
+Coolest Temperature: 4.97 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2002
-Warmest Temperature: 38.11 °C
+Warmest Temperature: 43.95 
 Warmest Station(s):
-  - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 12.49 °C
+  - MARBLE-BAR
+Coolest Temperature: 3.91 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2003
-Warmest Temperature: 37.67 °C
+Warmest Temperature: 43.00 
 Warmest Station(s):
-  - RABBIT-FLAT
-Coolest Temperature: 13.48 °C
+  - MARBLE-BAR
+Coolest Temperature: 4.51 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2004
-Warmest Temperature: 38.84 °C
+Warmest Temperature: 44.45 
 Warmest Station(s):
   - MARBLE-BAR
-Coolest Temperature: 12.52 °C
+Coolest Temperature: 3.91 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2005
-Warmest Temperature: 39.72 °C
+Warmest Temperature: 44.86 
 Warmest Station(s):
   - MARBLE-BAR
-Coolest Temperature: 13.04 °C
+Coolest Temperature: 4.48 
 Coolest Station(s):
   - CABRAMURRA-SMHEA-AWS
 
+Overall Warmest and Coolest Stations
+======================================================================
+
+Warmest Temperature: 47.13 
+Year: 1992
+Warmest Station(s):
+  - MARBLE-BAR
+
+Coolest Temperature: 3.81 
+Year: 1986
+Coolest Station(s):
+  - CABRAMURRA-SMHEA-AWS
