@@ -169,7 +169,7 @@ def find_largest_temp_range(input_folder, output_file):
     
     print(f"Results saved to {output_file}.")
 
-# Input folder containing the temperature CSV files
+# Input folder containing the temperature CSV file
 input_folder = "temperature_data"  # Replacing with the correct folder path
 
 # Outputs for all results
