@@ -1,6 +1,0 @@
-Year: 1999
-======================================================================
-
-Largest Temperature Range: 20.62 
-Station(s):
-  - WYALONG-POST-OFFICE

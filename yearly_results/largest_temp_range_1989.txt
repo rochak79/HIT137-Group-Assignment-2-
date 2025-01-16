@@ -1,6 +1,0 @@
-Year: 1989
-======================================================================
-
-Largest Temperature Range: 20.44 
-Station(s):
-  - WYALONG-POST-OFFICE

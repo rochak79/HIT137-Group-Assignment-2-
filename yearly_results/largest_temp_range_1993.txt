@@ -1,6 +1,0 @@
-Year: 1993
-======================================================================
-
-Largest Temperature Range: 20.41 
-Station(s):
-  - WAGGA-WAGGA-AMO

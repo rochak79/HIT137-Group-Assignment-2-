@@ -60,8 +60,6 @@ print(f"Seasonal averages saved to {output_file}.")
 2. Find the station/stations have the largest temperature range. Save the result to
 file “largest_temp_range_station.txt”
 
-Copy code from this and write overall results to the file [:to Rudraksh] [from:rochak]
-
 """
 
 def find_largest_temp_range(input_folder, output_file):

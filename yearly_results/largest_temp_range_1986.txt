@@ -1,6 +1,0 @@
-Year: 1986
-======================================================================
-
-Largest Temperature Range: 20.80 
-Station(s):
-  - WAGGA-WAGGA-AMO

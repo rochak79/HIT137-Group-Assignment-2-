@@ -1,6 +1,0 @@
-Year: 1996
-======================================================================
-
-Largest Temperature Range: 20.57 
-Station(s):
-  - OODNADATTA-AIRPORT
