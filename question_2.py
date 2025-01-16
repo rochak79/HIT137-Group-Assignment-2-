@@ -15,198 +15,228 @@ def calculate_seasonal_averages_per_year(input_folder, output_file):
         "Spring": [8, 9, 10],  # September, October, November
     }
 
-    # Open the output file for writing results
+    # Opening up the output file for writing results
     with open(output_file, "w") as f:
         f.write("Yearly Seasonal Averages Report\n")
         f.write("=" * 50 + "\n\n")
         
-        # Iterate through all CSV files
-        for file_name in sorted(os.listdir(input_folder)):  # Sorted for year-wise order
+        # Iterating through all CSV files
+        for file_name in sorted(os.listdir(input_folder)):  # Sort it like year-wise order
             if file_name.endswith(".csv"):
                 # Extracting the year from the file name 
                 year = file_name.split("_")[-1].split(".")[0]
 
-                # Read the CSV file
+                # Reading through the CSV file
                 file_path = os.path.join(input_folder, file_name)
                 data = pd.read_csv(file_path)
 
-                # Write the year heading
+                # Writing the year heading
                 f.write(f"Year: {year}\n")
                 f.write("-" * 50 + "\n")
 
-                # Calculate seasonal averages for the year
+                # Calculating seasonal averages for the year
                 for season, months in seasons.items():
                     # Select the corresponding month columns
                     month_indices = [4 + m for m in months]
                     season_data = data.iloc[:, month_indices]
-                    season_avg = season_data.mean().mean()  # Average temperature for the season
+                    season_avg = season_data.mean().mean()  # Average of temperature for the season
 
-                    # Write the season result
+                    # Writing the season result
                     f.write(f"{season:<10}: {season_avg:.2f} \n")
 
-                # Add a blank line after each year
+                # Adding a blank line after each year
                 f.write("\n")
 
 # Input and output file paths
 input_folder = "temperature_data"
 output_file = "average_temp.txt"
 
-# Run the function
+# Running the functions
 calculate_seasonal_averages_per_year(input_folder, output_file)
 print(f"Seasonal averages saved to {output_file}.")
 
 
 """
-2. Find Station with Largest Temperature Range
-python
-Copy code
+2. Find the station/stations have the largest temperature range. Save the result to
+file “largest_temp_range_station.txt”
+
+Copy code from this and write overall results to the file [:to Rudraksh] [from:rochak]
+
 """
-def find_largest_temp_range(input_folder, output_file):
-    # Create variables to track the largest temperature range and corresponding stations
-    largest_range = float('-inf')
-    largest_range_stations = []
-    largest_range_file = None
-
-    # Process each file in the input folder
-    for file_name in sorted(os.listdir(input_folder)):  # Process files in sorted order
-        if file_name.endswith(".csv"):
-            # Read the CSV file
-            file_path = os.path.join(input_folder, file_name)
-            data = pd.read_csv(file_path)
-
-            # Calculate temperature range (max - min) for each station
-            # Assuming temperature data starts from the 5th column onward
-            station_ranges = data.iloc[:, 4:].max(axis=1) - data.iloc[:, 4:].min(axis=1)
-
-            # Find the maximum temperature range in the current file
-            max_range = station_ranges.max()
-
-            # If this file has a larger range, update the tracking variables
-            if max_range > largest_range:
-                largest_range = max_range
-                largest_range_stations = data.loc[station_ranges == max_range, "STATION_NAME"].tolist()
-                largest_range_file = file_name
-
-    # Write the results to the output file
-    with open(output_file, "w") as f:
-        f.write("Stations with the Largest Temperature Range\n")
-        f.write("=" * 70 + "\n\n")
-        f.write(f"Largest Temperature Range: {largest_range:.2f} \n")
-        f.write(f"File: {largest_range_file}\n")
-        f.write("Station(s):\n")
-        for station in largest_range_stations:
-            f.write(f"  - {station}\n")
-        f.write("\n")
-
-# Input folder containing the temperature CSV files
-input_folder = "temperature_data"
-
-# Output file where the results will be saved
-output_file = "largest_temp_range_station.txt"
-
-# Call the function
-find_largest_temp_range(input_folder, output_file)
-
-print(f"Results saved to {output_file}.")
-
-
-# Function to find the station(s) with the largest temperature range
-def find_largest_temp_range_by_year(input_folder, output_folder):
-    for file_name in sorted(os.listdir(input_folder)):  # Process files in sorted order
-        if file_name.endswith(".csv"):
-            # Extract the year from the file name
-            year = file_name.split("_")[-1].split(".")[0]
-
-            # Read the CSV file
-            file_path = os.path.join(input_folder, file_name)
-            data = pd.read_csv(file_path)
-
-            # Calculate temperature range (max - min) for each station
-            station_ranges = data.iloc[:, 4:].max(axis=1) - data.iloc[:, 4:].min(axis=1)
-
-            # Find the largest temperature range in the file
-            largest_range = station_ranges.max()
-            largest_range_stations = data.loc[station_ranges == largest_range, "STATION_NAME"].tolist()
-
-            # Write the results to the output file
-            output_file = os.path.join(output_folder, f"largest_temp_range_{year}.txt")
-            with open(output_file, "w") as f:
-                f.write(f"Largest Temperature Range for Year {year}\n")
-                f.write("=" * 70 + "\n\n")
-                f.write(f"Largest Temperature Range: {largest_range:.2f} \n")
-                f.write("Station(s):\n")
-                for station in largest_range_stations:
-                    f.write(f"  - {station}\n")
-
-    print(f"Largest temperature range results saved to {output_folder}.")
-
-
 
 def find_largest_temp_range(input_folder, output_file):
+    """
+    Finding the warmest and coolest temperatures and their respective stations for each year
+    across multiple CSV files and calculating the overall largest temperature range.
+    Hence, saving the resulting text file.
+    """
+    # Storing overall data for later 
+    overall_data = {
+        "largest_range": float('-inf'),
+        "warmest_temp": None,
+        "warmest_stations": [],
+        "coolest_temp": None,
+        "coolest_stations": [],
+        "year": None
+    }
+
+    # Opening the output file for writing
     with open(output_file, "w") as f:
         f.write("Stations with the Largest Temperature Range\n")
         f.write("=" * 70 + "\n\n")
         
-        for file_name in sorted(os.listdir(input_folder)):
+        # Processing all files in the folder
+        for file_name in sorted(os.listdir(input_folder)):  # Ensuring files are processed in order
             if file_name.endswith(".csv"):
-                year = file_name.split("_")[-1].split(".")[0]
+                # Extracting the year from the file name
+                try:
+                    year = file_name.split("_")[-1].split(".")[0]
+                except IndexError:
+                    year = "Unknown"
+                
+                # Loading the CSV file
                 file_path = os.path.join(input_folder, file_name)
                 data = pd.read_csv(file_path)
-                
-                # Calculate temperature range (max - min) for each station
-                station_ranges = data.iloc[:, 4:].max(axis=1) - data.iloc[:, 4:].min(axis=1)
-                max_range = station_ranges.max()
-                largest_range_stations = data.loc[station_ranges == max_range, "STATION_NAME"].tolist()
-                
+
+                # Ensuring columns are numeric and exclude non-temperature columns
+                temperature_columns = data.columns[4:]  # assumptions as temperature data starts from 5th column
+                data[temperature_columns] = data[temperature_columns].apply(pd.to_numeric, errors='coerce')
+
+                # Finding the warmest and coolest temperatures annually
+                warmest_temperature = data[temperature_columns].max().max()
+                coolest_temperature = data[temperature_columns].min().min()
+
+                # Finding the stations with the warmest and coolest temperatures
+                warmest_stations = data.loc[data[temperature_columns].max(axis=1) == warmest_temperature, "STATION_NAME"].tolist()
+                coolest_stations = data.loc[data[temperature_columns].min(axis=1) == coolest_temperature, "STATION_NAME"].tolist()
+
+                # Calculating the temperature range for the year
+                temp_range = warmest_temperature - coolest_temperature
+
+                # Writing yearly results to the output file
                 f.write(f"Year: {year}\n")
-                f.write(f"Largest Temperature Range: {max_range:.2f} C\n")
-                f.write("Station(s):\n")
-                for station in largest_range_stations:
+                f.write(f"Warmest Temperature: {warmest_temperature:.2f} C\n")
+                f.write("Warmest Station(s):\n")
+                for station in warmest_stations:
                     f.write(f"  - {station}\n")
-                f.write("\n")
+                f.write(f"Coolest Temperature: {coolest_temperature:.2f} C\n")
+                f.write("Coolest Station(s):\n")
+                for station in coolest_stations:
+                    f.write(f"  - {station}\n")
+                f.write(f"Temperature Range: {temp_range:.2f} C\n\n")
+                
+                # if necessary, updating the overall largest range as well
+                if temp_range > overall_data["largest_range"]:
+                    overall_data["largest_range"] = temp_range
+                    overall_data["warmest_temp"] = warmest_temperature
+                    overall_data["warmest_stations"] = warmest_stations
+                    overall_data["coolest_temp"] = coolest_temperature
+                    overall_data["coolest_stations"] = coolest_stations
+                    overall_data["year"] = year
+
+        # Writing overall results to the output file
+        f.write("Overall Station(s) with the Largest Temperature Range\n")
+        f.write("=" * 70 + "\n\n")
+        f.write(f"Largest Temperature Range: {overall_data['largest_range']:.2f} C\n")
+        f.write(f"Year: {overall_data['year']}\n")
+        f.write(f"Warmest Temperature: {overall_data['warmest_temp']:.2f} C\n")
+        f.write("Warmest Station(s):\n")
+        for station in overall_data["warmest_stations"]:
+            f.write(f"  - {station}\n")
+        f.write(f"Coolest Temperature: {overall_data['coolest_temp']:.2f} C\n")
+        f.write("Coolest Station(s):\n")
+        for station in overall_data["coolest_stations"]:
+            f.write(f"  - {station}\n")
+    
+    print(f"Results saved to {output_file}.")
+
+# Input folder containing the temperature CSV files
+input_folder = "temperature_data"  # Replacing with the correct folder path
+
+# Outputs for all results
+output_file = "largest_temp_range_station.txt"
+
+# Calling the function
+find_largest_temp_range(input_folder, output_file)
+
 """
 3, Find the warmest and coolest station/stations. Save the result to file
 “warmest_and_coolest_station.txt”
 
 """
-# Function to find the warmest and coolest stations
+
+# Function to find warmest and coolest stations (with overall calculations)
 def find_warmest_and_coolest_stations(input_folder, output_file):
+    # Initialize variables to track overall warmest and coolest temperatures and stations
+    overall_warmest_temp = float('-inf')
+    overall_coolest_temp = float('inf')
+    overall_warmest_stations = []
+    overall_coolest_stations = []
+    warmest_year = None
+    coolest_year = None
+
+    # Open the output file to write results
     with open(output_file, "w") as f:
         f.write("Warmest and Coolest Stations\n")
         f.write("=" * 70 + "\n\n")
-        
-        for file_name in sorted(os.listdir(input_folder)):
+
+        # Process each file in the input folder
+        for file_name in sorted(os.listdir(input_folder)):  # Process files in sorted order
             if file_name.endswith(".csv"):
                 year = file_name.split("_")[-1].split(".")[0]
                 file_path = os.path.join(input_folder, file_name)
                 data = pd.read_csv(file_path)
-                
+
                 # Calculate average temperature for each station
-                station_avg_temps = data.iloc[:, 4:].mean(axis=1)
-                max_avg_temp = station_avg_temps.max()
-                min_avg_temp = station_avg_temps.min()
-                warmest_stations = data.loc[station_avg_temps == max_avg_temp, "STATION_NAME"].tolist()
-                coolest_stations = data.loc[station_avg_temps == min_avg_temp, "STATION_NAME"].tolist()
-                
+                station_max_temps = data.iloc[:, 4:].max(axis=1)
+                station_min_temps = data.iloc[:, 4:].min(axis=1)
+                max_temp = station_max_temps.max()
+                min_temp = station_min_temps.min()
+                warmest_stations = data.loc[station_max_temps == max_temp, "STATION_NAME"].tolist()
+                coolest_stations = data.loc[station_min_temps == min_temp, "STATION_NAME"].tolist()
+
+                # Write yearly results to the file
                 f.write(f"Year: {year}\n")
-                f.write(f"Warmest Temperature: {max_avg_temp:.2f} °C\n")
+                f.write(f"Warmest Temperature: {max_temp:.2f} \n")
                 f.write("Warmest Station(s):\n")
                 for station in warmest_stations:
                     f.write(f"  - {station}\n")
-                f.write(f"Coolest Temperature: {min_avg_temp:.2f} °C\n")
+                f.write(f"Coolest Temperature: {min_temp:.2f} \n")
                 f.write("Coolest Station(s):\n")
                 for station in coolest_stations:
                     f.write(f"  - {station}\n")
                 f.write("\n")
 
+                # Update overall warmest and coolest stations and temperatures
+                if max_temp > overall_warmest_temp:
+                    overall_warmest_temp = max_temp
+                    overall_warmest_stations = warmest_stations
+                    warmest_year = year
+
+                if min_temp < overall_coolest_temp:
+                    overall_coolest_temp = min_temp
+                    overall_coolest_stations = coolest_stations
+                    coolest_year = year
+
+        # Write overall results to the file
+        f.write("Overall Warmest and Coolest Stations\n")
+        f.write("=" * 70 + "\n\n")
+        f.write(f"Warmest Temperature: {overall_warmest_temp:.2f} \n")
+        f.write(f"Year: {warmest_year}\n")
+        f.write("Warmest Station(s):\n")
+        for station in overall_warmest_stations:
+            f.write(f"  - {station}\n")
+        f.write(f"\nCoolest Temperature: {overall_coolest_temp:.2f} \n")
+        f.write(f"Year: {coolest_year}\n")
+        f.write("Coolest Station(s):\n")
+        for station in overall_coolest_stations:
+            f.write(f"  - {station}\n")
+
+    print(f"All results saved to {output_file}.")
+
 # Define input and output paths
 input_folder = "temperature_data"
-output_file_largest_range = "largest_temp_range_station.txt"
 output_file_warmest_coolest = "warmest_and_coolest_station.txt"
 
-# Run the functions
-find_largest_temp_range(input_folder, output_file_largest_range)
+# Run the function
 find_warmest_and_coolest_stations(input_folder, output_file_warmest_coolest)
-
-print(f"Largest temperature range results saved to {output_file_largest_range}.")
-print(f"Warmest and coolest station results saved to {output_file_warmest_coolest}.")

@@ -1,0 +1,6 @@
+Year: 2003
+======================================================================
+
+Largest Temperature Range: 20.29 
+Station(s):
+  - BOURKE-AIRPORT-AWS

@@ -1,0 +1,6 @@
+Year: 1991
+======================================================================
+
+Largest Temperature Range: 20.66 
+Station(s):
+  - WYALONG-POST-OFFICE

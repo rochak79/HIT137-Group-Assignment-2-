@@ -1,0 +1,6 @@
+Year: 1992
+======================================================================
+
+Largest Temperature Range: 20.13 
+Station(s):
+  - TIBOOBURRA-POST-OFFICE

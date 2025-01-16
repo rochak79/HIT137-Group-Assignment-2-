@@ -1,0 +1,6 @@
+Year: 1995
+======================================================================
+
+Largest Temperature Range: 20.27 
+Station(s):
+  - RUTHERGLEN-RESEARCH

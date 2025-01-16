@@ -1,0 +1,6 @@
+Year: 2004
+======================================================================
+
+Largest Temperature Range: 20.59 
+Station(s):
+  - TIBOOBURRA-POST-OFFICE

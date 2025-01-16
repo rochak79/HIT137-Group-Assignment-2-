@@ -1,0 +1,6 @@
+Year: 2000
+======================================================================
+
+Largest Temperature Range: 21.07 
+Station(s):
+  - WAGGA-WAGGA-AMO

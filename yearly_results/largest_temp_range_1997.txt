@@ -1,0 +1,6 @@
+Year: 1997
+======================================================================
+
+Largest Temperature Range: 19.77 
+Station(s):
+  - WYALONG-POST-OFFICE

@@ -1,0 +1,6 @@
+Year: 1998
+======================================================================
+
+Largest Temperature Range: 20.15 
+Station(s):
+  - WYALONG-POST-OFFICE
