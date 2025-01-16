@@ -134,15 +134,15 @@ def find_largest_temp_range(input_folder, output_file):
 
                 # Writing yearly results to the output file
                 f.write(f"Year: {year}\n")
-                f.write(f"Warmest Temperature: {warmest_temperature:.2f} C\n")
-                f.write("Warmest Station(s):\n")
+                f.write(f"Warmest Temperature: {warmest_temperature:.2f} \n")
+                f.write("Warmest Station  :\n")
                 for station in warmest_stations:
                     f.write(f"  - {station}\n")
-                f.write(f"Coolest Temperature: {coolest_temperature:.2f} C\n")
-                f.write("Coolest Station(s):\n")
+                f.write(f"Coolest Temperature: {coolest_temperature:.2f} \n")
+                f.write("Coolest Station  :\n")
                 for station in coolest_stations:
                     f.write(f"  - {station}\n")
-                f.write(f"Temperature Range: {temp_range:.2f} C\n\n")
+                f.write(f"Temperature Range: {temp_range:.2f} \n\n")
                 
                 # if necessary, updating the overall largest range as well
                 if temp_range > overall_data["largest_range"]:
@@ -154,16 +154,16 @@ def find_largest_temp_range(input_folder, output_file):
                     overall_data["year"] = year
 
         # Writing overall results to the output file
-        f.write("Overall Station(s) with the Largest Temperature Range\n")
+        f.write("Overall Station   with the Largest Temperature Range\n")
         f.write("=" * 70 + "\n\n")
-        f.write(f"Largest Temperature Range: {overall_data['largest_range']:.2f} C\n")
+        f.write(f"Largest Temperature Range: {overall_data['largest_range']:.2f} \n")
         f.write(f"Year: {overall_data['year']}\n")
-        f.write(f"Warmest Temperature: {overall_data['warmest_temp']:.2f} C\n")
-        f.write("Warmest Station(s):\n")
+        f.write(f"Warmest Temperature: {overall_data['warmest_temp']:.2f} \n")
+        f.write("Warmest Station  :\n")
         for station in overall_data["warmest_stations"]:
             f.write(f"  - {station}\n")
-        f.write(f"Coolest Temperature: {overall_data['coolest_temp']:.2f} C\n")
-        f.write("Coolest Station(s):\n")
+        f.write(f"Coolest Temperature: {overall_data['coolest_temp']:.2f} \n")
+        f.write("Coolest Station  :\n")
         for station in overall_data["coolest_stations"]:
             f.write(f"  - {station}\n")
     
@@ -217,11 +217,11 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
                 # Writing yearly results to the file
                 f.write(f"Year: {year}\n")
                 f.write(f"Warmest Temperature: {max_temp:.2f} \n")
-                f.write("Warmest Station(s):\n")
+                f.write("Warmest Station  :\n")
                 for station in warmest_stations:
                     f.write(f"  - {station}\n")
                 f.write(f"Coolest Temperature: {min_temp:.2f} \n")
-                f.write("Coolest Station(s):\n")
+                f.write("Coolest Station  :\n")
                 for station in coolest_stations:
                     f.write(f"  - {station}\n")
                 f.write("\n")
@@ -242,12 +242,12 @@ def find_warmest_and_coolest_stations(input_folder, output_file):
         f.write("=" * 70 + "\n\n")
         f.write(f"Warmest Temperature: {overall_warmest_temp:.2f} \n")
         f.write(f"Year: {warmest_year}\n")
-        f.write("Warmest Station(s):\n")
+        f.write("Warmest Station  :\n")
         for station in overall_warmest_stations:
             f.write(f"  - {station}\n")
         f.write(f"\nCoolest Temperature: {overall_coolest_temp:.2f} \n")
         f.write(f"Year: {coolest_year}\n")
-        f.write("Coolest Station(s):\n")
+        f.write("Coolest Station  :\n")
         for station in overall_coolest_stations:
             f.write(f"  - {station}\n")
 
