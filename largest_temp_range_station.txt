@@ -2,193 +2,193 @@ Stations with the Largest Temperature Range
 ======================================================================
 
 Year: 1986
-Warmest Temperature: 43.31 C
-Warmest Station(s):
+Warmest Temperature: 43.31 
+Warmest Station  :
   - BOULIA-AIRPORT
-Coolest Temperature: 3.81 C
-Coolest Station(s):
+Coolest Temperature: 3.81 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 39.50 C
+Temperature Range: 39.50 
 
 Year: 1987
-Warmest Temperature: 42.75 C
-Warmest Station(s):
+Warmest Temperature: 42.75 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 7.33 C
-Coolest Station(s):
+Coolest Temperature: 7.33 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 35.42 C
+Temperature Range: 35.42 
 
 Year: 1988
-Warmest Temperature: 43.94 C
-Warmest Station(s):
+Warmest Temperature: 43.94 
+Warmest Station  :
   - HALLS-CREEK-AIRPORT
-Coolest Temperature: 7.18 C
-Coolest Station(s):
+Coolest Temperature: 7.18 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 36.76 C
+Temperature Range: 36.76 
 
 Year: 1989
-Warmest Temperature: 43.47 C
-Warmest Station(s):
+Warmest Temperature: 43.47 
+Warmest Station  :
   - WITTENOOM
-Coolest Temperature: 4.63 C
-Coolest Station(s):
+Coolest Temperature: 4.63 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 38.84 C
+Temperature Range: 38.84 
 
 Year: 1990
-Warmest Temperature: 42.22 C
-Warmest Station(s):
+Warmest Temperature: 42.22 
+Warmest Station  :
   - WITTENOOM
-Coolest Temperature: 4.92 C
-Coolest Station(s):
+Coolest Temperature: 4.92 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 37.30 C
+Temperature Range: 37.30 
 
 Year: 1991
-Warmest Temperature: 42.31 C
-Warmest Station(s):
+Warmest Temperature: 42.31 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 4.79 C
-Coolest Station(s):
+Coolest Temperature: 4.79 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 37.52 C
+Temperature Range: 37.52 
 
 Year: 1992
-Warmest Temperature: 47.13 C
-Warmest Station(s):
+Warmest Temperature: 47.13 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 5.27 C
-Coolest Station(s):
+Coolest Temperature: 5.27 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 41.86 C
+Temperature Range: 41.86 
 
 Year: 1993
-Warmest Temperature: 43.81 C
-Warmest Station(s):
+Warmest Temperature: 43.81 
+Warmest Station  :
   - VICTORIA-RIVER-DOWNS
-Coolest Temperature: 3.91 C
-Coolest Station(s):
+Coolest Temperature: 3.91 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 39.90 C
+Temperature Range: 39.90 
 
 Year: 1994
-Warmest Temperature: 43.40 C
-Warmest Station(s):
+Warmest Temperature: 43.40 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 5.91 C
-Coolest Station(s):
+Coolest Temperature: 5.91 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 37.49 C
+Temperature Range: 37.49 
 
 Year: 1995
-Warmest Temperature: 43.39 C
-Warmest Station(s):
+Warmest Temperature: 43.39 
+Warmest Station  :
   - BIRDSVILLE-AIRPORT
-Coolest Temperature: 6.29 C
-Coolest Station(s):
+Coolest Temperature: 6.29 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 37.10 C
+Temperature Range: 37.10 
 
 Year: 1996
-Warmest Temperature: 44.84 C
-Warmest Station(s):
+Warmest Temperature: 44.84 
+Warmest Station  :
   - BIRDSVILLE-AIRPORT
-Coolest Temperature: 4.04 C
-Coolest Station(s):
+Coolest Temperature: 4.04 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 40.80 C
+Temperature Range: 40.80 
 
 Year: 1997
-Warmest Temperature: 43.96 C
-Warmest Station(s):
+Warmest Temperature: 43.96 
+Warmest Station  :
   - WITTENOOM
-Coolest Temperature: 4.76 C
-Coolest Station(s):
+Coolest Temperature: 4.76 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 39.20 C
+Temperature Range: 39.20 
 
 Year: 1998
-Warmest Temperature: 43.67 C
-Warmest Station(s):
+Warmest Temperature: 43.67 
+Warmest Station  :
   - BIRDSVILLE-AIRPORT
-Coolest Temperature: 4.43 C
-Coolest Station(s):
+Coolest Temperature: 4.43 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 39.24 C
+Temperature Range: 39.24 
 
 Year: 1999
-Warmest Temperature: 42.52 C
-Warmest Station(s):
+Warmest Temperature: 42.52 
+Warmest Station  :
   - WITTENOOM
-Coolest Temperature: 4.16 C
-Coolest Station(s):
+Coolest Temperature: 4.16 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 38.36 C
+Temperature Range: 38.36 
 
 Year: 2000
-Warmest Temperature: 44.07 C
-Warmest Station(s):
+Warmest Temperature: 44.07 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 3.87 C
-Coolest Station(s):
+Coolest Temperature: 3.87 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 40.20 C
+Temperature Range: 40.20 
 
 Year: 2001
-Warmest Temperature: 46.77 C
-Warmest Station(s):
+Warmest Temperature: 46.77 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 4.97 C
-Coolest Station(s):
+Coolest Temperature: 4.97 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 41.80 C
+Temperature Range: 41.80 
 
 Year: 2002
-Warmest Temperature: 43.95 C
-Warmest Station(s):
+Warmest Temperature: 43.95 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 3.91 C
-Coolest Station(s):
+Coolest Temperature: 3.91 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 40.04 C
+Temperature Range: 40.04 
 
 Year: 2003
-Warmest Temperature: 43.00 C
-Warmest Station(s):
+Warmest Temperature: 43.00 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 4.51 C
-Coolest Station(s):
+Coolest Temperature: 4.51 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 38.49 C
+Temperature Range: 38.49 
 
 Year: 2004
-Warmest Temperature: 44.45 C
-Warmest Station(s):
+Warmest Temperature: 44.45 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 3.91 C
-Coolest Station(s):
+Coolest Temperature: 3.91 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 40.54 C
+Temperature Range: 40.54 
 
 Year: 2005
-Warmest Temperature: 44.86 C
-Warmest Station(s):
+Warmest Temperature: 44.86 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 4.48 C
-Coolest Station(s):
+Coolest Temperature: 4.48 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
-Temperature Range: 40.38 C
+Temperature Range: 40.38 
 
-Overall Station(s) with the Largest Temperature Range
+Overall Station   with the Largest Temperature Range
 ======================================================================
 
-Largest Temperature Range: 41.86 C
+Largest Temperature Range: 41.86 
 Year: 1992
-Warmest Temperature: 47.13 C
-Warmest Station(s):
+Warmest Temperature: 47.13 
+Warmest Station  :
   - MARBLE-BAR
-Coolest Temperature: 5.27 C
-Coolest Station(s):
+Coolest Temperature: 5.27 
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS

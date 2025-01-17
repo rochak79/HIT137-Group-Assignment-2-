@@ -3,162 +3,162 @@ Warmest and Coolest Stations
 
 Year: 1986
 Warmest Temperature: 43.31 
-Warmest Station(s):
+Warmest Station  :
   - BOULIA-AIRPORT
 Coolest Temperature: 3.81 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1987
 Warmest Temperature: 42.75 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 7.33 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1988
 Warmest Temperature: 43.94 
-Warmest Station(s):
+Warmest Station  :
   - HALLS-CREEK-AIRPORT
 Coolest Temperature: 7.18 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1989
 Warmest Temperature: 43.47 
-Warmest Station(s):
+Warmest Station  :
   - WITTENOOM
 Coolest Temperature: 4.63 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1990
 Warmest Temperature: 42.22 
-Warmest Station(s):
+Warmest Station  :
   - WITTENOOM
 Coolest Temperature: 4.92 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1991
 Warmest Temperature: 42.31 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 4.79 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1992
 Warmest Temperature: 47.13 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 5.27 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1993
 Warmest Temperature: 43.81 
-Warmest Station(s):
+Warmest Station  :
   - VICTORIA-RIVER-DOWNS
 Coolest Temperature: 3.91 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1994
 Warmest Temperature: 43.40 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 5.91 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1995
 Warmest Temperature: 43.39 
-Warmest Station(s):
+Warmest Station  :
   - BIRDSVILLE-AIRPORT
 Coolest Temperature: 6.29 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1996
 Warmest Temperature: 44.84 
-Warmest Station(s):
+Warmest Station  :
   - BIRDSVILLE-AIRPORT
 Coolest Temperature: 4.04 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1997
 Warmest Temperature: 43.96 
-Warmest Station(s):
+Warmest Station  :
   - WITTENOOM
 Coolest Temperature: 4.76 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1998
 Warmest Temperature: 43.67 
-Warmest Station(s):
+Warmest Station  :
   - BIRDSVILLE-AIRPORT
 Coolest Temperature: 4.43 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 1999
 Warmest Temperature: 42.52 
-Warmest Station(s):
+Warmest Station  :
   - WITTENOOM
 Coolest Temperature: 4.16 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2000
 Warmest Temperature: 44.07 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 3.87 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2001
 Warmest Temperature: 46.77 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 4.97 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2002
 Warmest Temperature: 43.95 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 3.91 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2003
 Warmest Temperature: 43.00 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 4.51 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2004
 Warmest Temperature: 44.45 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 3.91 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Year: 2005
 Warmest Temperature: 44.86 
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 Coolest Temperature: 4.48 
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 
 Overall Warmest and Coolest Stations
@@ -166,10 +166,10 @@ Overall Warmest and Coolest Stations
 
 Warmest Temperature: 47.13 
 Year: 1992
-Warmest Station(s):
+Warmest Station  :
   - MARBLE-BAR
 
 Coolest Temperature: 3.81 
 Year: 1986
-Coolest Station(s):
+Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
