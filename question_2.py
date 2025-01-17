@@ -12,6 +12,7 @@ result to file “average_temp.txt”.
 file “largest_temp_range_station.txt”.
 3. Find the warmest and coolest station/stations. Save the result to file
 “warmest_and_coolest_station.txt”.
+4. Find the year with the highest average temperature and save the result to file
 """
 
 
