@@ -23,13 +23,16 @@ when reaching the condition depth = 0 then it will stop drawing becuase we have 
 and it stop calling itself and then the drawing ends.
 
 """
+
+initial_depth = 0
+initial_branch_length = 0
 def draw_tree_pattern(branch_length, left_angle, right_angle, depth, reduction_factor):
 
     if depth == 0:  # Base case: stop when depth reaches 0 
         return
 
     # set the color based on the depth
-    if depth == 5:
+    if depth == initial_depth:
         turtle.color("brown")
     else:
         turtle.color("green")
@@ -49,13 +52,15 @@ def draw_tree_pattern(branch_length, left_angle, right_angle, depth, reduction_f
     turtle.left(right_angle)  # Return to original position
 
     # return to the starting point of the current branch
-    if branch_length == 100:
+    if branch_length == initial_branch_length:
         turtle.penup()
         turtle.hideturtle()
     turtle.backward(branch_length)
 
 # Main function to set up the turtle and take user input
 def main():
+    # declare global variables
+    global initial_depth, initial_branch_length
     # Taking all the inputs from user as defined in the question itself
     # As you anybody can see it is self explanatory and only asking whawt is needed.
     while True: 
@@ -66,6 +71,10 @@ def main():
             branch_length = int(input("Please enter the starting branch length (e.g., 100): "))
             depth = int(input("Please enter the recursion depth (e.g., 5): "))
             reduction_factor = float(input("Please enter the branch length reduction factor (e.g., 0.7): "))
+            
+            # assigning the global variables
+            initial_depth = depth
+            initial_branch_length = branch_length
 
 
             """
