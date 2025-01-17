@@ -1,6 +1,17 @@
 def encrypting_txt(text, n, m):
     """
-    Encrypting the text as per given requirements
+    Encrypts text using a shift style with different rules for each half of the alphabet and if uppercase or lowercase.
+
+    The encryption splits the alphabet into two halves (a-m and n-z) and applies different sets of rules:
+    - Lowercase first half (a-m): shifts foward by (n * m) 
+    - Lowercase second half (n-z): shifts backward by (n + m) 
+    - Uppercase first half (A-M): shifts backward by n 
+    - Uppercase second half (N-Z): shifts forward by (m * m) 
+    
+    The modulo 13 (% 13) ensures each transformation stays within its respective half of the alphabet. 
+    Non-alphabetic characters remain unchanged.
+
+    The output will save the encrypted text in a new txt file 
     """
     encrypted_text = "" #stores the encrypted text in an empty string
     
@@ -35,10 +46,17 @@ def encrypting_txt(text, n, m):
 
 def decrypting_txt(encrypted_text, n, m):
     """
-    Decryptes the encrypted text using the same sets of rules, but reversed. 
-    """
-    decrypted_text = ""
+    Decrypts text by reversing the original substitution cipher used in encryption.
+
+    The decryption follows reverse rules for each half of the alphabet:
+    - Lowercase first half (a-m): shifts backward by (n * m) 
+    - Lowercase second half (n-z): shifts forward by (n + m) 
+    - Uppercase first half (A-M): shifts forward by n 
+    - Uppercase second half (N-Z): shifts backward by (m * m) 
     
+    the output will decrypt the encrypted text and save to a new txt file 
+    
+    """
     for char in encrypted_text:
         # Handle lowercase letters
         if char.islower():
@@ -67,6 +85,11 @@ def decrypting_txt(encrypted_text, n, m):
     return decrypted_text
 
 def main(): 
+    """
+    Main function that implements the two function and prompts the user to input values for n and m 
+    
+    execption handling has also been implemented to handle any errors
+    """
     while True:  
         try:
             # Get user input for n and m
