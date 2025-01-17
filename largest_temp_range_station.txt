@@ -181,7 +181,7 @@ Coolest Station  :
   - CABRAMURRA-SMHEA-AWS
 Temperature Range: 40.38 
 
-Overall Station with the Largest Temperature Range
+Overall Station   with the Largest Temperature Range
 ======================================================================
 
 Largest Temperature Range: 41.86 

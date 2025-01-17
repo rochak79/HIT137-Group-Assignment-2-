@@ -57,6 +57,7 @@ def decrypting_txt(encrypted_text, n, m):
     the output will decrypt the encrypted text and save to a new txt file 
     
     """
+    decrypted_text = ""
     for char in encrypted_text:
         # Handle lowercase letters
         if char.islower():
@@ -121,7 +122,7 @@ def main():
                 
             program = input("Would you like to encrypt the text again? (yes/no): ").lower()
             if program != "yes" and program  != "y":
-                print("Thank you for using this encrytpion program!")
+                print("Thank you for using this encryption program!")
                 break
         
         except FileNotFoundError:

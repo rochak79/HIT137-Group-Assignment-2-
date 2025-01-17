@@ -103,16 +103,14 @@ def main():
             # Calling the recursive function to draw the tree
             draw_tree_pattern(branch_length, left_angle, right_angle, depth, reduction_factor)
             
-            # this function help to keep the window open until the user closes it manually.
             # When the current turtle window is closed, the program will prompts the user if they want to run the program again 
-            turtle.exitonclick()
+            turtle.exitonclick() #this method will close the current turtle screen, allowing the user to be prompted if they would like to start another one
             
             #Asks if the user wants to run the prgram again with different parameters
             program = input("Would you like to draw another tree? (yes/no): ").lower()
             if program != "yes" and program  != "y":
                 print("Thank you for running the program")
                 break
-            
             
         except ValueError as ve:
             print(f"Invalid input: {ve}")
